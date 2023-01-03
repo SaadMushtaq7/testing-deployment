@@ -6,7 +6,7 @@
             "use":"@now/node"
         },
         
-    {"buildCommand": "next build"}
+    {"buildCommand": "npm run build"}
     ],
     "routes":[
         {
