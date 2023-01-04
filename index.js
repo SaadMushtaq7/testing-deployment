@@ -1,13 +1,13 @@
-import express from 'express'
+const express = require("express");
 
-const app = express()
+const app = express();
 
-const port = 9000
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
 
-app.use('/',(req,res)=>{
-    res.json({message:'Hello from me!'})
-})
+app.listen(5000, () => {
+  console.log("Running on port 5000.");
+});
 
-app.listen(9000,()=>{
-    console.log(`Starting the server on port: ${port}`)
-})
+module.exports = app;
